@@ -1,5 +1,6 @@
 import {types} from "mobx-state-tree";
-import {renderTexture} from "../engine/mainScene/Create";
+import {useScene} from "../hooks/useScene";
+
 
 const Dot = types.model({
   x: types.number,
@@ -18,7 +19,9 @@ export const RootStore = types.model({
       self.dots.clear();
     },
     resetCanvas() {
-      renderTexture.clear();
+      const scene = useScene();
+
+      scene.children.removeAll();
     }
   }
 });

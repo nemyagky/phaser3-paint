@@ -1,9 +1,9 @@
 import * as React from 'react';
 import styled from "@emotion/styled";
 import {useStore} from "../hooks/useStore";
-import {useEffect} from "react";
 import {observer} from "mobx-react-lite";
 import * as mobx from "mobx";
+
 
 const Wrapper = styled.div`
   display: flex;

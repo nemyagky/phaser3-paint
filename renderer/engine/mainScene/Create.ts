@@ -2,7 +2,6 @@ import {useScene} from "../../hooks/useScene";
 import {useStore} from "../../hooks/useStore";
 
 
-export let renderTexture;
 
 export const create = () => {
   const scene = useScene();
